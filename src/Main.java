@@ -1,9 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        int initialBalance = 800;                           //Начальный баланс
-        int amountOfPayment = 200;                           //Сумма платежа
-        int balance = initialBalance + amountOfPayment;
-        int fBonus = balance >= 1000 ? balance / 100 : 0;
-        System.out.println("Текущий баланс счета: " + (balance + fBonus) + " руб., в том числе сумма бонусных рублей: " + (fBonus) + " руб.");
+        int initBalance = 800;                           //Начальный баланс
+        int payment = 200;                           //Сумма платежа
+        int fBonus = (initBalance + payment) >= 1000 ? (initBalance + payment) / 100 : 0;
+        System.out.println("Текущий баланс: " + (initBalance + payment + fBonus) + " руб., в том числе бонус: " + (fBonus) + " руб.");
     }
 }
